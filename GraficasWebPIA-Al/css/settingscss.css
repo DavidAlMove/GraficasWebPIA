@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.containerS {
+   height: 80%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Make the image responsive */
+.containerS img {
+ max-height: 80%;
+	max-width: 80%;
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 105px;
+	
+}
+
+.containerS #btnM {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 80px;
+} 
+
+.containerS #btnNM {
+  position: absolute;
+  top: 50%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 80px;
+} 
+
+.containerS #btn- {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 80px;
+} 
+
+.containerS #btnS {
+  position: absolute;
+  top: 50%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 80px;
+} 
+
+
+.containerS #btnMas {
+  position: absolute;
+  top: 50%;
+  left: 62%;
+  transform: translate(-50%, -50%);
+
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 80px;
+} 
+
+.containerS #btnM:hover, #btnNM:hover, #btn-:hover, #btnMas:hover{
+  width: 100px;
+}
+
+.ui:hover{
+  width: 110px;
+  cursor: pointer;
+}

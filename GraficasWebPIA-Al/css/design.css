@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../media/images/bg.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu{
+	max-height: 80%;
+	max-width: 80%;
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+	
+}
+
+.ui{
+	 max-height: 12%;
+	 max-width: 12%;
+	 display: block;
+  	float:right;
+}
+
+
+.container {
+   height: 80%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Make the image responsive */
+.container img {
+ max-height: 80%;
+	max-width: 80%;
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 105px;
+	
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container #btn {
+  position: absolute;
+   top: 33.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 150px;
+} 
+
+.container #btn2 {
+  position: absolute;
+  top: 41.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 150px;
+} 
+
+.container #btn3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 150px;
+} 
+
+.container #btn4 {
+  position: absolute;
+  top: 57.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 150px;
+} 
+
+
+.container #btn5 {
+  position: absolute;
+  top: 65.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 150px;
+} 
+
+.container #btn:hover, #btn2:hover, #btn3:hover, #btn4:hover, #btn5:hover{
+  width: 180px;
+}
+
+.ui:hover{
+  width: 110px;
+  cursor: pointer;
+}
+
+/*div .esUnA:hover{
+  cursor: pointer;
+}
