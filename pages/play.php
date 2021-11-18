@@ -2,7 +2,7 @@
 <html>
 <head>
 	<?php
-		$link = "http://localhost:8080/GW/PIA_Test/";
+		$link = "http://localhost/GraficasWebPIA-Al/";
 	?>
 
 	 <link rel="shortcut icon" type="image" href="<?php echo $link; ?>media/images/ICON-31.png"/>
@@ -12,6 +12,7 @@
 	<title>Select map</title>
 </head>
 <body>
+	<?php session_start(); ?>
 
 	<img class="menu" src="<?php echo $link; ?>media/images/GAME UI-05.png" alt="Italian Trulli">
 
