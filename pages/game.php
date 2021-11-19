@@ -9,7 +9,7 @@
 
 		<?php
 		//Esta dirección es de mi local, pueden cambiarla a su conveniencia.
-		$link = "http://localhost/GraficasWebPIA-Al/";
+		$link = "http://localhost:8080/GW/GraficasWebPIA/";
 		?>
 	</head>
 	<script src="<?php echo $link; ?>js/lib/jquery-3.6.0.min.js"></script>
@@ -205,7 +205,7 @@
 	</script>
 
 	<body>
-		<?php session_start(); ?>
+		<?php //session_start(); ?>
 		<div id="scene-section"></div>
 	</body>
 </html>

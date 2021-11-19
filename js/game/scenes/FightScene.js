@@ -67,7 +67,7 @@ export default class FightScene extends Scene {
         });
         this.add(this.player1);
 
-        this.player2 = new Character(this, {
+        /*this.player2 = new Character(this, {
             position: new THREE.Vector3(20, -15, -20),
             controlMap: {
                 right: "6",
@@ -80,14 +80,14 @@ export default class FightScene extends Scene {
                 interact: "7"
             },
             skin: 'AlienA'
-        });
-        this.add(this.player2);
+        });*/
+        //this.add(this.player2);
         
-        this.player3 = new CharacterAi(this, {
+        this.player2 = new CharacterAi(this, {
             position: new THREE.Vector3(-20, -15, -20),
             skin: 'RobotA'
         });
-        this.add(this.player3);
+        this.add(this.player2);
                 
         this.add(new AstroGun(this, {
             position: new THREE.Vector3(0, 0, -20)

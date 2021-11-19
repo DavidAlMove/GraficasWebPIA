@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <?php
-        $link = "http://localhost:8080/GW/GraficasWebPIA-Al/";
+        $link = "http://localhost:8080/GW/GraficasWebPIA/";
     ?>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,20 +29,20 @@
                         <div class="row register-form">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control txtUsername" placeholder="Username *" value="" />
+                                    <input type="text" class="form-control txtUsername" id="txtNameUsuario" placeholder="Username *" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control txtUser_Name" placeholder="Your name*" value="" />
+                                    <input type="text" class="form-control txtUser_Name" id="txtName" placeholder="Your name*" value="" />
                                 </div>
                                 <div class="form-group">
-                                    <input type="password" class="form-control txtPassword" placeholder="Password *" value="" />
+                                    <input type="password" class="form-control txtPassword" id="txtContraseña" placeholder="Password *" value="" />
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="email" class="form-control txtEmail" placeholder="Your Email *" value="" />
+                                    <input type="email" class="form-control txtEmail" id="txtCorreo" placeholder="Your Email *" value="" />
                                 </div>
-                                <input type="submit" class="btnRegister"  value="Register"/>
+                                <input type="submit" class="btnRegister"  id="validar" value="Register"/>
                             </div>
                         </div>
                     </div>
@@ -54,5 +54,7 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="../js/pages/register.js"></script>
+    <script src="../js/pages/validarRegistro.js"></script>
+
 </body>
 </html>

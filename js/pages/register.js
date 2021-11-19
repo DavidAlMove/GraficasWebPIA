@@ -6,6 +6,16 @@ $(document).ready(function(){
 		var password = $(".txtPassword").val();
 		var email = $(".txtEmail").val();
 
+
+		blankRegister();
+			
+			if ( password =="") {
+				
+			   alert("Introduzca una contraseña")
+	
+			   }
+
+
 		console.log("Username: " + username, "User name: " + user_name, "email: " + email, "Password: " + password)
 		registerUser(username, user_name, email, password);
 	});
@@ -44,4 +54,84 @@ $(document).ready(function(){
 	            	}
 		})
 	}
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	function blankRegister(){
+		var name= $(".txtUsername").val();
+    var email= $(".txtEmail").val();
+    var user=  $(".txtUser_Name").val();
+    var psswrd= $(".txtPassword").val();
+		
+		
+	   
+	 
+		if(name==""){
+			alert("Favor de introducir sus datos personales");
+			
+		} 
+		else if (user==""){
+			alert("Favor de introducir un nombre de usuario valido");
+		} 
+		
+		
+	   if (email=="")
+		{
+			alert("Favor de introducir su correo electronico");
+		}
+		else 
+		{
+			var respuesta = validateEmail(email);
+			if (!respuesta){
+			alert("Introducir bien el correo electronico");
+			}
+		}  
+		
+		
+	 }
+	
+	
+	
+	$(".form-group").submit(function (e) { 
+			
+			blankRegister();
+			var password = document.getElementById("txtContraseña").value;
+			var ps = validar_clave(password);
+			if (ps == false || password =="") {
+				
+			   alert("La contraseña debe tener por lo minimo 8 caracteres, con por lo menos 1 Mayuscula, 1 minuscula, 1 numero y un signo")
+	
+			   }
+		})
+	
+	
+	  function validateEmail(email) {
+					 var input = document.createElement('input');
+	
+						input.type = 'email';
+						input.required = true;
+						input.value = email;
+	
+						 return typeof input.checkValidity === 'function' ? input.checkValidity() : /\S+@\S+\.\S+/.test(email);
+				 }
+	
+	
+	
+
+
+
+
 });

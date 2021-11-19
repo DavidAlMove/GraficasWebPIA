@@ -2,7 +2,7 @@
 <html>
 <head>
 	<?php
-		$link = "http://localhost/GraficasWebPIA-Al/";
+		$link = "http://localhost:8080/GW/GraficasWebPIA/";
 	?>
 
 	 <link rel="shortcut icon" type="image" href="<?php echo $link; ?>media/images/ICON-31.png"/>

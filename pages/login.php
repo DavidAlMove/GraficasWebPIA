@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <?php
-        $link = "http://localhost:8080/GW/GraficasWebPIA-Al/";
+        $link = "http://localhost:8080/GW/GraficasWebPIA/";
     ?>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
