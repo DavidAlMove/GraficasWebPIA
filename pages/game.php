@@ -9,7 +9,7 @@
 
 		<?php
 		//Esta dirección es de mi local, pueden cambiarla a su conveniencia.
-		$link = "http://localhost/GraficasWebPIA-bryan/";
+		$link = "../";
 		?>
 	</head>
 	<script src="<?php echo $link; ?>js/lib/jquery-3.6.0.min.js"></script>
@@ -41,93 +41,143 @@
 				{
 					name: 'MapTwo',
 					type: 'model',
-					path: '<?php echo $link; ?>models/maps/mapaMine2.fbx'
+					path: '/GraficasWebPIA/models/maps/mapaMine2.fbx'
 				},
 				{
 					name: 'PlayerBase',
 					type: 'model',
-					path: '<?php echo $link; ?>models/characters/characterMedium.fbx'
+					path: '/GraficasWebPIA/models/characters/characterMedium.fbx'
 				},
 				{
 					name: 'AstroGun',
 					type: 'model',
-					path: '<?php echo $link; ?>models/items/astroGun.fbx'
+					path: '/GraficasWebPIA/models/items/astroGun.fbx'
 				},
 				{
 					name: 'Sword',
 					type: 'model',
-					path: '<?php echo $link; ?>models/items/sword.fbx'
+					path: '/GraficasWebPIA/models/items/sword.fbx'
 				},
 				{
 					name: 'Shield',
 					type: 'model',
-					path: '<?php echo $link; ?>models/items/shield.fbx'
+					path: '/GraficasWebPIA/models/items/shield.fbx'
 				},
 				{
 					name: 'ZombieA',
 					type: 'texture',
-					path: '<?php echo $link; ?>models/characters/skins/zombieA.png'
+					path: '/GraficasWebPIA/models/characters/skins/zombieA.png'
 				},
 				{
 					name: 'RobotA',
 					type: 'texture',
-					path: '<?php echo $link; ?>models/characters/skins/robot.png'
+					path: '/GraficasWebPIA/models/characters/skins/robot.png'
 				},
 				{
 					name: 'AlienA',
 					type: 'texture',
-					path: '<?php echo $link; ?>models/characters/skins/alienA.png'
+					path: '/GraficasWebPIA/models/characters/skins/alienA.png'
 				},
 				{
 					name: 'CharacterIdle',
 					type: 'animation',
-					path: '<?php echo $link; ?>models/animations/idle.fbx'
+					path: '/GraficasWebPIA/models/animations/idle.fbx'
 				},
 				{
 					name: 'CharacterWalk',
 					type: 'animation',
-					path: '<?php echo $link; ?>models/animations/walk.fbx'
+					path: '/GraficasWebPIA/models/animations/walk.fbx'
 				},
 				{
 					name: 'CharacterPunch',
 					type: 'animation',
-					path: '<?php echo $link; ?>models/animations/punch.fbx'
+					path: '/GraficasWebPIA/models/animations/punch.fbx'
 				},
 				{
 					name: 'CharacterKick',
 					type: 'animation',
-					path: '<?php echo $link; ?>models/animations/kick.fbx'
+					path: '/GraficasWebPIA/models/animations/kick.fbx'
 				},
 				{
 					name: 'CharacterJump',
 					type: 'animation',
-					path: '<?php echo $link; ?>models/animations/jump.fbx'
+					path: '/GraficasWebPIA/models/animations/jump.fbx'
 				},
 				{
 					name: 'CharacterDeath',
 					type: 'animation',
-					path: '<?php echo $link; ?>models/animations/death.fbx'
+					path: '/GraficasWebPIA/models/animations/death.fbx'
 				},
 				{
 					name: 'CharacterBlock',
 					type: 'animation',
-					path: '<?php echo $link; ?>models/animations/block.fbx'
+					path: '/GraficasWebPIA/models/animations/block.fbx'
 				},
 				{
 					name: 'CharacterShoot',
 					type: 'animation',
-					path: '<?php echo $link; ?>models/animations/shoot.fbx'
+					path: '/GraficasWebPIA/models/animations/shoot.fbx'
 				},
 				{
 					name: 'CharacterAttack',
 					type: 'animation',
-					path: '<?php echo $link; ?>models/animations/attack.fbx'
+					path: '/GraficasWebPIA/models/animations/attack.fbx'
 				},
 				{
 					name: 'CharacterShield',
 					type: 'animation',
-					path: '<?php echo $link; ?>models/animations/shield.fbx'
-				}
+					path: '/GraficasWebPIA/models/animations/shield.fbx'
+		},
+			{
+                    name: 'CharacterSpecialPunch',
+                    type: 'animation',
+                    path: '/GraficasWebPIA/models/animations/special-punch.fbx'
+                },
+                {
+                    name: 'CharacterSpecialKick',
+                    type: 'animation',
+                    path: '/GraficasWebPIA/models/animations/special-kick.fbx'
+                },
+                {
+                    name: 'Laser',
+                    type: 'audio',
+                    path: '/GraficasWebPIA/media/sounds/laser.wav'
+                },
+                {
+                    name: 'PunchA',
+                    type: 'audio',
+                    path: '/GraficasWebPIA/media/sounds/punch-a.wav'
+                },
+                {
+                    name: 'PunchB',
+                    type: 'audio',
+                    path: '/GraficasWebPIA/media/sounds/punch-b.wav'
+                },
+                {
+                    name: 'SwordA',
+                    type: 'audio',
+                    path: '/GraficasWebPIA/media/sounds/sword-a.wav'
+                },
+                {
+                    name: 'SwordB',
+                    type: 'audio',
+                    path: '/GraficasWebPIA/media/sounds/sword-b.wav'
+                },
+                {
+                    name: 'PickUp',
+                    type: 'audio',
+                    path: '/GraficasWebPIA/media/sounds/pickup.wav'
+                },
+                {
+                    name: 'Spark',
+                    type: 'audio',
+                    path: '/GraficasWebPIA/media/sounds/spark.wav'
+		},
+			{
+                    name: 'Particle',
+                    type: 'texture',
+                    path: '/GraficasWebPIA/media/images/particle.png'
+                }
 			];
 
 			Resources.loadResources(resources).then(() => {
