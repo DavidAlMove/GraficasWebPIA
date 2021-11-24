@@ -62,7 +62,7 @@ $(document).ready(function(){
                 skin = "AlienA";
                 break;
             case "4":
-                
+                skin = "FreddieA";
                 break;
         }
         return skin;
