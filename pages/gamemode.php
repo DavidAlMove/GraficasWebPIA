@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image" href="<?php echo $link; ?>media/images/icon.png"/>
     <title>Document</title>
     <?php
-		$link = "";
+		$link = "../";
 	?>
     <script src="<?php echo $link; ?>js/lib/jquery-3.6.0.min.js"></script>
 </head>

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<?php
-		$link = "";
+		$link = "../";
 	?>
 
 	 <link rel="shortcut icon" type="image" href="<?php echo $link; ?>media/images/ICON-31.png"/>

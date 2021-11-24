@@ -24,7 +24,7 @@ $(document).ready(function(){
 			dataType: 'json',
 			success: function(data){
 				if(data) {
-                    window.location = "../index.php";
+                    window.location = "/index.php";
                 } else {
                     Swal.fire(
                       'Incorrect data or the user does not exist',
