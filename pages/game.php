@@ -105,7 +105,7 @@
 					name: 'AlienA',
 					type: 'texture',
 					path: '/GraficasWebPIA/models/characters/skins/alienA.png'
-				}
+				},
 				{
 					name: 'FreddieA',
 					type: 'texture',
