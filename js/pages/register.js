@@ -27,7 +27,7 @@ $(document).ready(function(){
 		console.log(userData);
 
 		$.ajax({
-			url: '/php/controllers/register.php',
+			url: 'GraficasWebPIA/php/controllers/register.php',
 			type: 'POST',
 			data: userData,
 			dataType: 'json',
