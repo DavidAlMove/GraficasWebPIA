@@ -15,7 +15,7 @@
 <body>
     <?php
     session_start();
-		$link = "";
+		$link = "../";
         if(isset($_SESSION['id'])){
             echo'<input type="hidden" class="inputUserId" name="userIdSession" value="'.$_SESSION['id'].'">';
         }else{
