@@ -7,7 +7,7 @@ $(document).ready(function(){
 		if(counter>4){
 			counter=1;
 		}
-		$(".personajeSkinSelect").attr("src","http://localhost:8080/GW/GraficasWebPIA/media/images/characters/"+counter+".png");
+		$(".personajeSkinSelect").attr("src","/media/images/characters/"+counter+".png");
 		$(".personajeSkinSelect").attr("id", counter);
 	});
 
@@ -16,7 +16,7 @@ $(document).ready(function(){
 		if(counter<1){
 			counter=4;
 		}
-		$(".personajeSkinSelect").attr("src","http://localhost:8080/GW/GraficasWebPIA/media/images/characters/"+counter+".png");
+		$(".personajeSkinSelect").attr("src","/media/images/characters/"+counter+".png");
 		$(".personajeSkinSelect").attr("id", counter);
 	});
 
@@ -45,7 +45,7 @@ $(document).ready(function(){
             n = n+1;
             $(".skinTurnIA").attr('id', n);
         }else{
-            $(".btnAceptar").attr('href', "http://localhost:8080/GW/GraficasWebPIA/pages/game.php");
+            $(".btnAceptar").attr('href', "/pages/game.php");
         }
     });
 

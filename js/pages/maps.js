@@ -5,7 +5,7 @@ $(document).ready(function() {
 		if(counter>4){
 			counter=1;
 		}
-		$("#map").attr("src","http://localhost:8080/GW/GraficasWebPIA/media/images/mapas/"+counter+".jpg");
+		$("#map").attr("src","/media/images/mapas/"+counter+".jpg");
 	});
 
 	$("#btnAtras").click(function(){
@@ -13,7 +13,7 @@ $(document).ready(function() {
 		if(counter<1){
 			counter=4;
 		}
-		$("#map").attr("src","http://localhost:8080/GW/GraficasWebPIA/media/images/mapas/"+counter+".jpg");		
+		$("#map").attr("src","/media/images/mapas/"+counter+".jpg");		
 	});
 
 	$("#btnAceptar2").click(function(){
