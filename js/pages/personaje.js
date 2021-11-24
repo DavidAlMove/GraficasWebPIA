@@ -7,7 +7,7 @@ $(document).ready(function(){
 		if(counter>4){
 			counter=1;
 		}
-		$(".personajeSkinSelect").attr("src","/media/images/characters/"+counter+".png");
+		$(".personajeSkinSelect").attr("src","media/images/characters/"+counter+".png");
 		$(".personajeSkinSelect").attr("id", counter);
 	});
 
@@ -16,7 +16,7 @@ $(document).ready(function(){
 		if(counter<1){
 			counter=4;
 		}
-		$(".personajeSkinSelect").attr("src","/media/images/characters/"+counter+".png");
+		$(".personajeSkinSelect").attr("src","media/images/characters/"+counter+".png");
 		$(".personajeSkinSelect").attr("id", counter);
 	});
 
