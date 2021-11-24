@@ -47,6 +47,8 @@ export default class Character extends SimpleRigidBody {
 
     playerIndex;
 
+    killY;
+
     // Reference to all the characters in the game
     static totalPlayers = [];
 
@@ -86,6 +88,7 @@ export default class Character extends SimpleRigidBody {
         this.hp = props.hp ?? 50;
         this.attackPower = props.attackPower ?? 80;
         this.direction = props.direction ?? Character.Direction.Right;
+        this.killY = props.killY ?? -100;
 
         this.userId = props.userId ?? null;
 
@@ -137,7 +140,7 @@ export default class Character extends SimpleRigidBody {
             this.updateAnimationTriggers();
         }
 
-        if (this.hp <= 0) {
+        if (this.hp <= 0 || this.handler.position.y <= this.killY) {
             this.hp = 0;
             this.currentState = Character.State.Death;
             this.isDeath = true;
@@ -344,7 +347,7 @@ export default class Character extends SimpleRigidBody {
     }
 
     onKeyDown(key, repeat) {
-        if (key == this.controlMap.jump) {
+        if (key == this.controlMap.jump && !this.isDeath) {
             this.jump();
         }
         
@@ -377,7 +380,7 @@ export default class Character extends SimpleRigidBody {
         const knockback = damage * knockbackMultiplier;
         this.handler.position.x += knockback * dt * direction;
         this.hp -= totalDamage * dt;
-        console.log('Player ' + this.playerIndex + ' received a hit. Damage: ' + totalDamage);
+        // console.log('Player ' + this.playerIndex + ' received a hit. Damage: ' + totalDamage);
     }
 
     updateCollisions(dt) {

@@ -16,11 +16,19 @@ const audioLoader = (path) => {
     });
 }
 
+const cubeMapLoader = (path, images) => {
+    return new Promise((resolve) => {
+        (new THREE.CubeTextureLoader()).setPath(path).load(images, resolve);
+    });
+}
+
 export default class Resources {
     static loaders = {
         fbx: fbxLoader,
         png: textureLoader,
-        wav: audioLoader
+        wav: audioLoader,
+        mp3: audioLoader,
+        cubemap: cubeMapLoader
     };
 
     static resourcePaths = {
@@ -32,7 +40,8 @@ export default class Resources {
         model: {},
         texture: {},
         animation: {},
-        audio: {}
+        audio: {},
+        cubemap: {}
     };
 
     static setModelPath(key, path) {
@@ -83,15 +92,31 @@ export default class Resources {
         Resources.resources.audio[key.toLowerCase()] = value;
     }
 
+    static getCubeMapResource(key, defVal = null) {
+        return Resources.resources.cubemap[key.toLowerCase()] ?? defVal;
+    }
+
+    static setCubeMapResource(key, value) {
+        Resources.resources.cubemap[key.toLowerCase()] = value;
+    }
+
     static loadResources(resources) {
         const promises = resources.map((resource) => {
             const name = resource.name.toLowerCase();
             const type = resource.type.toLowerCase();
+            
+            let loader;
+            const images = resource.images ?? null;
             const path = resource.path;
-            const extension = path.split('.').pop().toLowerCase();
-            const loader = Resources.loaders[extension];
+            if (type === 'cubemap') {
+                loader = Resources.loaders[type];
+            }
+            else {
+                const extension = path.split('.').pop().toLowerCase();
+                loader = Resources.loaders[extension];
+            }
 
-            return loader(path).then((loaded) => {
+            return loader(path, images).then((loaded) => {
                 Resources.resources[type][name] = loaded;
             });
         });

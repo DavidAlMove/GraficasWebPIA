@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.containerS {
+   height: 80%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Make the image responsive */
+.containerS img {
+ max-height: 80%;
+	max-width: 80%;
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7%;
+	
+}
+
+.containerS #btnM {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 80px;
+
+  min-width: 6%;
+
+	max-width: 6%;
+  
+} 
+
+.containerS #btnNM {
+  position: absolute;
+  top: 50%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 80px;
+
+  min-width: 6%;
+
+	max-width: 6%;
+} 
+
+.containerS #btn- {
+  position: absolute;
+  top: 50%;
+  left: 54%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 80px;
+
+  min-width: 4%;
+
+	max-width: 4%;
+} 
+
+.containerS #btnS {
+  position: absolute;
+  top: 50%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 80px;
+
+  min-width: 5%;
+
+	max-width: 5%;
+} 
+
+
+.containerS #btnMas {
+  position: absolute;
+  top: 50%;
+  left: 62%;
+  transform: translate(-50%, -50%);
+
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 80px;
+
+  min-width: 4%;
+
+	max-width: 4%;
+} 
+
+.containerS #btnM:hover, #btnNM:hover {
+  min-width: 7%;
+}
+
+.containerS #btn-:hover, #btnMas:hover{
+  min-width: 5%;
+}
+
+.ui:hover{
+  max-height: 14%;
+  max-width: 14%;
+  cursor: pointer;
+}

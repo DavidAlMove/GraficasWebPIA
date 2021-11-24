@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Login</title>
 
-    <link rel="shortcut icon" type="image" href="<?php echo $link; ?>media/images/ICON-31.png"/>
+    <link rel="shortcut icon" type="image" href="<?php echo $link; ?>media/images/icon.png"/>
 	<link rel="stylesheet" href="../css/register.css"/>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 </head>

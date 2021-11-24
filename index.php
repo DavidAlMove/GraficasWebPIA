@@ -6,7 +6,8 @@
 	?>
 	<link rel="shortcut icon" type="image" href="<?php echo $link; ?>media/images/icon.png"/>
 
-	 <link rel="stylesheet" href="css/design.css"/>
+	 <link rel="stylesheet" href="css/design2.css"/>
+
 	<title>
 		Brawl Guys
 	</title>
@@ -18,7 +19,14 @@
 
 	<body>
 		<?php session_start(); ?>
-		<h1><?php echo $_SESSION['username'] ?></h1>
+		<h1><?php 
+		if(isset($_SESSION['username'])){
+			echo "Welcome back, ".$_SESSION['username']."!";
+			echo "<script>localStorage.setItem('sessionId','".$_SESSION['id']."');</script>"; ?>
+			<script>localStorage.setItem('isLoged', 'true');</script>
+		<?php } else{ ?>
+			<script>localStorage.setItem('isLoged', 'true');</script>
+		<?php } ?></h1>
 		<audio autoplay>
 			<source src="<?php echo $link; ?>media/sounds/menum.mp3" type="audio/mp3">
 		</audio>
@@ -41,7 +49,7 @@
 				<a href="<?php echo $link; ?>pages/creditos.php"><img src="<?php  echo $link; ?>media/images/menu_index/btn_credits.png" alt="Italian Trulli" id="btn5"></a>
 			</div>
 
-		<a href="<?php echo $link; ?>pages/settings.php"><img class="ui" src="<?php echo $link; ?>media/images/settings/GAME UI-09.png" alt="Italian Trulli"></a>
+			<a href="<?php echo $link; ?>pages/settings.php"><img class="ui" src="<?php echo $link; ?>media/images/settings/GAME UI-09.png" alt="Italian Trulli"></a>
 
 		<img class="ui" src="<?php echo $link; ?>media/images/settings/GAME UI-16.png" alt="Italian Trulli">
 

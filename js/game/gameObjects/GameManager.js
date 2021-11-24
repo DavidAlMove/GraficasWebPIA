@@ -1,3 +1,4 @@
+import WebServiceConnector from "../WebServiceConnector.js";
 import Character from "./Character.js";
 
 export default class GameManager {
@@ -15,14 +16,12 @@ export default class GameManager {
 
         if (deathPlayers == playerCount - 1) {
             if (!GameManager.gameOver) {
-                
                 let winner = null;
                 for (const player of Character.totalPlayers) {
                     if (!player.isDeath) {
                         winner = player;
                     }
                 }
-
                 GameManager.onGameOver(winner);
                 GameManager.gameOver = true;
             }
@@ -30,8 +29,6 @@ export default class GameManager {
     }
 
     static onGameOver(winnerPlayer) {
-        if (winnerPlayer.userId) {
-            console.log(winnerPlayer.userId);
-        }
+        WebServiceConnector.onWin(winnerPlayer.userId ?? null);
     }
 }

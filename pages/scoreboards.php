@@ -5,7 +5,7 @@
 		$link = "";
 	?>
 
-	<link rel="shortcut icon" type="image" href="<?php echo $link; ?>media/images/ICON-31.png"/>
+	<link rel="shortcut icon" type="image" href="<?php echo $link; ?>media/images/icon.png"/>
 
 	 <link rel="stylesheet" href="<?php echo $link; ?>css/scores.css"/>
 	<title>
@@ -17,41 +17,28 @@
 </body>-->
 
 <body>
-	<?php session_start(); ?>
+	<?php session_start();
+	require_once("../php/models/punctuations.php"); ?>
 
 	<div class="scores">
-<img id="board" src="<?php echo $link; ?>media/images/scores/GAME UI-03.png" alt="Italian Trulli">
+		<img id="board" src="<?php echo $link; ?>media/images/scores/GAME UI-03.png" alt="Italian Trulli">
 
-<img id="n1" src="<?php echo $link; ?>media/images/scores/GAME UI-43.png" alt="Italian Trulli">
+		
+		<?php
+			$i = 1;
+			$scoreboard = Punctuations::getScoreboard();
+			foreach ($scoreboard as $user => $value) {
+				$x = $i + 42;
+				echo '<img id="n'.$i.'" src="'.$link.'media/images/scores/GAME UI-'.$x.'.png" alt="Italian Trulli">
+				<label id="n'.$i.'l">'.$value["USERNAME"].' ha obtenido: '.$value["VICTORIES"].' victorias!</label>';
+				$i++;
+			}
+		?>
 
-<label id="n1l">Aqui va el usuario 1 xD</label>
+		<a href="<?php echo $link; ?>pages/settings.php"><img class="ui" src="<?php echo $link; ?>media/images/settings/GAME UI-09.png" alt="Italian Trulli"></a>
 
-<img id="n2" src="<?php echo $link; ?>media/images/scores/GAME UI-44.png" alt="Italian Trulli">
-
-<label id="n2l">Aqui va el usuario 2 xD</label>
-
-
-<img id="n3" src="<?php echo $link; ?>media/images/scores/GAME UI-45.png" alt="Italian Trulli">
-
-<label id="n3l">Aqui va el usuario 3 xD</label>
-
-<img id="n4" src="<?php echo $link; ?>media/images/scores/GAME UI-46.png" alt="Italian Trulli">
-
-<label id="n4l">Aqui va el usuario 4 xD</label>
-
-<img id="n5" src="<?php echo $link; ?>media/images/scores/GAME UI-47.png" alt="Italian Trulli">
-
-<label id="n5l">Aqui va el usuario 5 xD</label>
-
-<img id="n6" src="<?php echo $link; ?>media/images/scores/GAME UI-48.png" alt="Italian Trulli">
-
-<label id="n6l">Aqui va el usuario 6 xD</label>
-
-
-<a href="<?php echo $link; ?>pages/settings.php"><img class="ui" src="<?php echo $link; ?>media/images/settings/GAME UI-09.png" alt="Italian Trulli"></a>
-
-<img class="ui" src="<?php echo $link; ?>media/images/settings/GAME UI-16.png" alt="Italian Trulli">
-</div>
+		<img class="ui" src="<?php echo $link; ?>media/images/settings/GAME UI-16.png" alt="Italian Trulli">
+	</div>
 
 </body>
 

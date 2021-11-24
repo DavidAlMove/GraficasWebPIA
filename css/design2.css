@@ -1,0 +1,565 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../media/images/bg.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+}
+
+h1{
+font-size: 1.1vw;
+  font-weight: bold;
+  font-family: arial;
+  color:white;
+  padding-left: 1%;
+}
+
+.menu{
+max-height: 80%;
+max-width: 80%;
+ display: block;
+margin-left: auto;
+margin-right: auto;
+padding-top: 1%;
+
+}
+
+
+
+.ui{
+ max-height: 12%;
+ max-width: 12%;
+ display: block;
+  float:right;
+}
+
+
+.container {
+ height: 80%;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.pausa {
+height: 80%;
+ margin: 0;
+ padding: 0;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+
+.pausa img {
+max-height: 80%;
+ max-width: 80%;
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+ padding-top: 4%;
+ 
+}
+
+
+.pausa #btnResume {
+position: absolute;
+ top: 33.5%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: transparent;
+color: transparent;
+font-size: 16px;
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+margin-bottom: 2px;
+border-radius: 5px;
+width: 150px;
+
+min-width: 11%;
+
+max-height: 11%;
+max-width: 11%;
+
+} 
+
+.pausa #btnRestart {
+position: absolute;
+top: 41.5%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: transparent;
+color: transparent;
+font-size: 16px;
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+margin-bottom: 2px;
+border-radius: 5px;
+width: 150px;
+
+min-width: 11%;
+
+max-height: 11%;
+max-width: 11%;
+} 
+
+.pausa #btnOptions {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: transparent;
+color: transparent;
+font-size: 16px;
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+margin-bottom: 2px;
+border-radius: 5px;
+width: 150px;
+
+min-width: 11%;
+max-height: 11%;
+max-width: 11%;
+} 
+
+.pausa #btnHelp {
+position: absolute;
+top: 57.5%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: transparent;
+color: transparent;
+font-size: 16px;
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+margin-bottom: 2px;
+border-radius: 5px;
+width: 150px;
+
+min-width: 11%;
+max-height: 11%;
+max-width: 11%;
+} 
+
+
+.pausa #btnExit {
+position: absolute;
+top: 65.5%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+margin-bottom: 2px;
+border-radius: 5px;
+width: 150px;
+
+min-width: 11%;
+
+max-height: 11%;
+max-width: 11%;
+} 
+
+.pausa #btnResume:hover, #btnRestart:hover, #btnOptions:hover, #btnHelp:hover, #btnExit:hover{
+min-width: 12%;
+min-height: 12%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Make the image responsive */
+.container img {
+max-height: 80%;
+max-width: 80%;
+ display: block;
+margin-left: auto;
+margin-right: auto;
+padding-top: 7%;
+
+}
+
+/* Style the button and place it in the middle of the container/image */
+.container #btn {
+position: absolute;
+ top: 33.5%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: transparent;
+color: transparent;
+font-size: 16px;
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+margin-bottom: 2px;
+border-radius: 5px;
+width: 150px;
+
+min-width: 11%;
+
+max-height: 11%;
+max-width: 11%;
+
+} 
+
+.container #btn2 {
+position: absolute;
+top: 41.5%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: transparent;
+color: transparent;
+font-size: 16px;
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+margin-bottom: 2px;
+border-radius: 5px;
+width: 150px;
+
+min-width: 11%;
+
+max-height: 11%;
+max-width: 11%;
+} 
+
+.container #btn3 {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: transparent;
+color: transparent;
+font-size: 16px;
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+margin-bottom: 2px;
+border-radius: 5px;
+width: 150px;
+
+min-width: 11%;
+max-height: 11%;
+max-width: 11%;
+} 
+
+.container #btn4 {
+position: absolute;
+top: 57.5%;
+left: 50%;
+transform: translate(-50%, -50%);
+background-color: transparent;
+color: transparent;
+font-size: 16px;
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+margin-bottom: 2px;
+border-radius: 5px;
+width: 150px;
+
+min-width: 11%;
+max-height: 11%;
+max-width: 11%;
+} 
+
+
+.container #btn5 {
+position: absolute;
+top: 65.5%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+padding: 12px 24px;
+border: none;
+cursor: pointer;
+margin-bottom: 2px;
+border-radius: 5px;
+width: 150px;
+
+min-width: 11%;
+max-height: 11%;
+max-width: 11%;
+} 
+
+.container #btn:hover, #btn2:hover, #btn3:hover, #btn4:hover, #btn5:hover{
+min-width: 12%;
+min-height: 12%;
+}
+
+.ui:hover{
+max-height: 14%;
+max-width: 14%;
+cursor: pointer;
+}
+
+.loader{
+
+transform-origin: center;
+animation: scale 2000ms ease-in-out forwards;
+animation-iteration-count: infinite;
+}
+@keyframes scale {
+0% {
+  transform: scale(0.3);
+}
+50% {
+  transform: scale(0.5);
+}
+100% {
+  transform: scale(0.3);
+}
+}
+
+
+#txtPlayers{
+position: absolute;
+top: 40%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+padding: 0.7%;
+border: none;
+cursor: pointer;
+margin-bottom: 2px;
+border-radius: 5px;
+width: 150px;
+
+min-height: 1.6%;
+min-width: 11%;
+max-height: 1.6%;
+max-width: 11%;
+}
+
+#txtIA{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+padding: 0.7%;
+border: none;
+cursor: pointer;
+margin-bottom: 2px;
+border-radius: 5px;
+width: 150px;
+min-height: 1.6%;
+min-width: 11%;
+max-height: 1.6%;
+max-width: 11%;
+}
+
+#btnGamemode{
+font-family: Arial;
+font-weight: bold;
+  font-size: 1vw;
+  
+  color: white;
+background-color: burlywood;
+position: absolute;
+top: 80%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+padding: 0.7%;
+border: none;
+cursor: pointer;
+margin-bottom: 2px;
+border-radius: 5px;
+width: 150px;
+
+min-width: 11%;
+min-height: 6%;
+max-height: 1.6%;
+max-width: 11%;
+}
+
+#jug{
+font-family: Arial;
+font-weight: bold;
+  font-size: 1vw;
+  
+  color: white;
+
+position: absolute;
+top: 33%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+padding: 12px 24px;
+border: none;
+
+margin-bottom: 2px;
+border-radius: 5px;
+width: 150px;
+
+min-width: 11%;
+max-height: 11%;
+max-width: 11%;
+}
+
+
+#iat{
+font-family: Arial;
+font-weight: bold;
+  font-size: 1vw;
+  
+  color: white;
+
+position: absolute;
+top: 46%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+padding: 12px 24px;
+border: none;
+
+margin-bottom: 2px;
+border-radius: 5px;
+width: 150px;
+
+min-width: 11%;
+max-height: 11%;
+max-width: 11%;
+
+}
+
+#txtIADif{
+position: absolute;
+top: 63%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+padding: 0.5%;
+border: none;
+cursor: pointer;
+margin-bottom: 2px;
+border-radius: 5px;
+width: 150px;
+min-height: 5%;
+min-width: 12%;
+max-height: 5%;
+max-width: 12%;
+}
+
+
+#iatD{
+font-family: Arial;
+font-weight: bold;
+  font-size: 1vw;
+  
+  color: white;
+
+position: absolute;
+top: 58%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+padding: 12px 24px;
+border: none;
+
+margin-bottom: 2px;
+border-radius: 5px;
+width: 150px;
+
+min-width: 11%;
+max-height: 11%;
+max-width: 11%;
+
+}
+
+
+
+
+.register-heading, .head3{
+
+margin-top: 30%;
+font-family: Arial;
+font-weight: bold;
+  font-size: 1.5vw;
+  
+  color: white;
+
+}
+
+p{
+font-family: Arial;
+  font-size: 1vw;
+  
+  color: white;
+
+}
+
+#btnLog{
+font-family: Arial;
+font-weight: bold;
+  font-size: 1vw;
+  color:white;
+background-color: blue;
+border-radius: 10%;
+border: none;
+padding: 1%;
+cursor: pointer;
+margin-bottom: 18%;
+}
+
+#btnRegister{
+font-family: Arial;
+font-weight: bold;
+  font-size: 1vw;
+  color:black;
+background-color: darkgrey;
+border-radius: 10%;
+border: none;
+padding: 1%;
+cursor: pointer;
+margin-bottom: 18%;
+}
+
+#validar{
+font-family: Arial;
+font-weight: bold;
+  font-size: 1vw;
+  color:whitesmoke;
+background-color:blue;
+border-radius: 10%;
+border: none;
+padding: 1%;
+cursor: pointer;
+margin-bottom: 18%;
+}
+
+.col-md-3{
+background-color:darkcyan;
+height: 20%;
+top: 2%;
+border-radius: 20%;
+}
+
+#xD{
+background-color:darkolivegreen;
+
+padding: 5%;
+border-radius: 40px;
+}

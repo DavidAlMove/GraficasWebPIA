@@ -7,8 +7,8 @@
 
 	<link rel="shortcut icon" type="image" href="<?php echo $link; ?>media/images/icon.png"/>
 
-	<link rel="stylesheet" href="<?php echo $link; ?>css/design.css"/>
-	<link rel="stylesheet" href="<?php echo $link; ?>css/settingscss.css"/>
+	<link rel="stylesheet" href="<?php echo $link; ?>css/design2.css"/>
+	<link rel="stylesheet" href="<?php echo $link; ?>css/settingscss2.css"/>
 
 	<title>Settings</title>
 </head>
