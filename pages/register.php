@@ -13,7 +13,10 @@
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 </head>
 <body>
-    <?php session_start(); ?>
+    <?php session_start(); 
+    ini_set('display_errors', 1); 
+    error_reporting(E_ALL);
+    ?>
   <div class="container register">
         <div class="row">
             <div class="col-md-3 register-left">
