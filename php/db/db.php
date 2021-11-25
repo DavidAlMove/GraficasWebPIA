@@ -2,10 +2,10 @@
 class Connection{
 
 public static function connect() {
-		$databasehost = "localhost:3307";
+		$databasehost = "localhost:3306";
 		$databasename = "brawl_guys_db";
-		$databaseuser = "root";
-		$databasepass = "";
+		$databaseuser = "administrador";
+		$databasepass = "Password_1";
 
 		$mysqli = new mysqli($databasehost, $databaseuser, $databasepass, $databasename);
 		if ($mysqli->connect_errno) {
