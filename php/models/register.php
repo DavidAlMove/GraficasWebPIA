@@ -9,8 +9,7 @@ header('Access-Control-Allow-Origin: *');
 			$db = Connection::connect();
 			$result = $db->query("CALL proc_user('I', '".$username."', '".$user_name."', '".$email."', '".$password."');");
 			Connection::disconnect($db);
+			return $result;
 		}
-
-		
 	}
 ?>
