@@ -13,9 +13,7 @@
 		$email = $_POST['user_email'];
 		$password = $_POST['user_password'];
 
-		print_r($_POST);
-
-		//$resp = Register::registerUser($username, $user_name, $email, $password);
+		$resp = Register::registerUser($username, $user_name, $email, $password);
 	}
 	else if($action == 'SA'){
 
