@@ -463,6 +463,49 @@ max-height: 5%;
 max-width: 12%;
 }
 
+#txtItems{
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  padding: 0.5%;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 150px;
+  min-height: 5%;
+  min-width: 12%;
+  max-height: 5%;
+  max-width: 12%;
+  }
+
+  #iatP{
+    font-family: Arial;
+    font-weight: bold;
+      font-size: 1vw;
+      
+      color: white;
+    
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    padding: 12px 24px;
+    border: none;
+    
+    margin-bottom: 2px;
+    border-radius: 5px;
+    width: 150px;
+    
+    min-width: 11%;
+    max-height: 11%;
+    max-width: 11%;
+    
+    }
+
 
 #iatD{
 font-family: Arial;

@@ -17,11 +17,7 @@ export default class WebServiceConnector {
                         data: userData,
                         dataType: 'json',
                         success: function(data){
-                            Swal.fire(
-                              'Se ha registrado la victoria.',
-                              '',
-                              'success'
-                            )
+                            alert("Se ha registrado la victoria.");
                         },
                         error: function(XMLHttpRequest, textStatus, errorThrown) {
                                 console.warn(XMLHttpRequest.responseText);

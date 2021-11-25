@@ -308,14 +308,12 @@
 			<img src="<?php echo $link; ?>media/images/victory/GAME UI-04.png" alt="Italian Trulli">
 			<img src="<?php  echo $link; ?>media/images/victory/GAME UI-49.png" alt="Italian Trulli" id="btnShare"  onclick="shareFB();">
 		</div>
-
 		
 		<div id="gameOverMenu" class="gO">
 			<img src="<?php echo $link; ?>media/images/game_over/GAME UI-07.png" alt="Italian Trulli">
 			<img src="<?php  echo $link; ?>media/images/game_over/GAME UI-54.png" alt="Italian Trulli" id="btnPA">
 			<a href="<?php echo $link; ?>index.php"><img src="<?php  echo $link; ?>media/images/game_over/GAME UI-55.png" alt="Italian Trulli" id="btnExit"></a>
 		</div>
-
 
 		<div id="pauseMenu" class="pausa">
 			<img src="<?php echo $link; ?>media/images/pausa/GAME UI-02.png" alt="Italian Trulli">

@@ -32,14 +32,8 @@ $(document).ready(function(){
 			data: userData,
 			dataType: 'json',
 			success: function(data){
-				Swal.fire(
-                  'Account created successfully',
-                  '',
-                  'success'
-                ).then(function (result) {
-                    if (result.value) {
+				alert("Usuario registrado!").then(function (result) {
                         window.location = "login.php";
-                    }
                 })
 			},
 			error: function(XMLHttpRequest, textStatus, errorThrown) {

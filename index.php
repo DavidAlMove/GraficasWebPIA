@@ -44,7 +44,7 @@
 				<a href="<?php echo $link; ?>pages/scoreboards.php"><img src="<?php  echo $link; ?>media/images/menu_index/btn_score.png" alt="Italian Trulli" id="btn3"></a>
 
 
-				<a href="<?php echo $link; ?>pages/scoreboards.php"><img src="<?php  echo $link; ?>media/images/menu_index/btn_tutorial.png" alt="Italian Trulli" id="btn4"></a>
+				<a href="<?php echo $link; ?>pages/login.php"><img src="<?php  echo $link; ?>media/images/menu_index/btn_tutorial.png" alt="Italian Trulli" id="btn4"></a>
 
 				<a href="<?php echo $link; ?>pages/creditos.php"><img src="<?php  echo $link; ?>media/images/menu_index/btn_credits.png" alt="Italian Trulli" id="btn5"></a>
 			</div>

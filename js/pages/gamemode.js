@@ -16,14 +16,24 @@ $(document).ready(function(){
         }
     });
 
+    $("#txtItems").on('change', function(){
+        var items = $(this).find('option:selected').text();
+        if(items = "Con Items"){
+            localStorage.setItem('items', 'true');
+        }else if (items = "Sin Items"){
+            localStorage.setItem('items', 'false');
+        }
+    });
+
     function testInput(){   
         var playerCount = $("#txtPlayers").val();
         var aiCount = $("#txtIA").val();
         var flag = true;
         var map = localStorage.getItem('map');
         var session = localStorage.getItem('isLoged');
-        var sessionId = localStorage.getItem('sessionId');
+        var sessionId = localStorage.getItem('sessionId');  
         var difficulty = localStorage.getItem('difficulty');
+        var itemsFlag = localStorage.getItem('items');
 
         localStorage.clear();
         for (let index = 1; index <= playerCount; index++) {
