@@ -2,7 +2,7 @@
 class Connection{
 
 public static function connect() {
-		$databasehost = "localhost:3306";
+		$databasehost = "localhost";
 		$databasename = "brawl_guys_db";
 		$databaseuser = "administrador";
 		$databasepass = "Password_1";
