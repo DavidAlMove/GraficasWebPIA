@@ -1,6 +1,6 @@
 <?php
 header('Access-Control-Allow-Origin: *');
-	require_once('../db/db.php');
+	require_once('/GraficasWebPIA/php/db/db.php');
 
 	class Register{
 		private $db;

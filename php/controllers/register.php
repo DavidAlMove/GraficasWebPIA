@@ -1,7 +1,7 @@
 <?php
 	header('Access-Control-Allow-Origin: *');
-	require_once('../db/db.php');
-	require_once('../models/register.php');
+	require_once('/GraficasWebPIA/db/db.php');
+	require_once('/GraficasWebPIA/models/register.php');
 
 	$resp = null;
 	$action = $_POST['vAction'];

@@ -18,7 +18,7 @@
 
 <body>
 	<?php session_start();
-	require_once("../php/models/punctuations.php"); ?>
+	require_once("/GraficasWebPIA/php/models/punctuations.php"); ?>
 
 	<div class="scores">
 		<img id="board" src="<?php echo $link; ?>media/images/scores/GAME UI-03.png" alt="Italian Trulli">

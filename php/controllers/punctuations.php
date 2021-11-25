@@ -1,7 +1,7 @@
 <?php
 	header('Access-Control-Allow-Origin: *');
-	require_once('../db/db.php');
-	require_once('../models/punctuations.php');
+	require_once('/GraficasWebPIA/db/db.php');
+	require_once('/GraficasWebPIA/models/punctuations.php');
 
     $resp = null;
     $action = $_POST['vAction'];

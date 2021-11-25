@@ -1,6 +1,6 @@
 <?php
 header('Access-Control-Allow-Origin: *');
-	require_once('../db/db.php');
+	require_once('/GraficasWebPIA/db/db.php');
 
 	class Login{
 		private $db;
