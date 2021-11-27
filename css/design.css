@@ -100,7 +100,7 @@ html, body {
 
 .container #btn4 {
   position: absolute;
-  top: 65.5%;
+  top: 57.5%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent;
@@ -113,6 +113,30 @@ html, body {
   border-radius: 5px;
   width: 150px;
 } 
+
+
+.container #btn5 {
+  position: absolute;
+  top: 65.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 150px;
+} 
+
+.container #btn:hover, #btn2:hover, #btn3:hover, #btn4:hover, #btn5:hover{
+  width: 180px;
+}
+
+.ui:hover{
+  width: 110px;
+  cursor: pointer;
+}
 
 /*div .esUnA:hover{
   cursor: pointer;

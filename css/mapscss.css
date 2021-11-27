@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.containerS {
+   height: 80%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Make the image responsive */
+.containerS img {
+ max-height: 80%;
+	max-width: 80%;
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 105px;
+	
+}
+
+#map {
+ max-height: 80%;
+  max-width: 80%;
+  
+
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 300px;
+  
+}
+
+.personajeSkinSelect {
+ max-height: 80%;
+  max-width: 80%;
+  
+
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 80px;
+  
+}
+
+
+.containerS #btnAtras {
+  position: absolute;
+  top: 48%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 80px;
+} 
+
+
+
+.containerS #btnAceptar {
+  position: absolute;
+  top: 65%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 80px;
+} 
+
+.containerS #btnAdelante {
+  position: absolute;
+  top: 48%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 80px;
+} 
+
+.containerS #btnAtras:hover, #btnAdelante:hover, #btnAceptar:hover{
+  width: 100px;
+}
+
+.ui:hover{
+  width: 110px;
+  cursor: pointer;
+}

@@ -2,11 +2,12 @@
 <html>
 <head>
 	<?php
-		$link = "http://localhost:8080/GW/PIA_Test/";
+		$link = "http://localhost:8080/GW/GraficasWebPIA/";
 	?>
-	<link rel="shortcut icon" type="image" href="<?php echo $link; ?>media/images/ICON-31.png"/>
+	<link rel="shortcut icon" type="image" href="<?php echo $link; ?>media/images/icon.png"/>
 
-	 <link rel="stylesheet" href="css/design.css"/>
+	 <link rel="stylesheet" href="css/design2.css"/>
+
 	<title>
 		Brawl Guys
 	</title>
@@ -17,30 +18,40 @@
 
 
 	<body>
-
-
-			<audio autoplay>
-				<source src="<?php echo $link; ?>media/sounds/menum.mp3" type="audio/mp3">
-			</audio>
+		<?php session_start(); ?>
+		<h1><?php 
+		if(isset($_SESSION['username'])){
+			echo "Welcome back, ".$_SESSION['username']."!";
+			echo "<script>localStorage.setItem('sessionId','".$_SESSION['id']."');</script>"; ?>
+			<script>localStorage.setItem('isLoged', 'true');</script>
+		<?php } else{ ?>
+			<script>localStorage.setItem('isLoged', 'true');</script>
+		<?php } ?></h1>
+		<audio autoplay>
+			<source src="<?php echo $link; ?>media/sounds/menum.mp3" type="audio/mp3">
+		</audio>
 
 			<div class="container">
 
-				<img src="<?php echo $link; ?>media/images/GAME UI-01.png" alt="Italian Trulli">
+				<img src="<?php echo $link; ?>media/images/menu_index/back_menu.png" alt="Italian Trulli">
 
-				<a class="esUnA" href="<?php echo $link; ?>pages/play.php"><button id="btn">Button</button></a>
+				<a href="<?php echo $link; ?>pages/maps.php"><img src="<?php  echo $link; ?>media/images/menu_index/btn_play.png" alt="Italian Trulli" id="btn"></a>
 
 				<!--<a href="scoreboards.html"><button id="btn2">Button2</button></a>-->
 
-				<a class="esUnA" href="<?php echo $link; ?>pages/scoreboards.php"><button id="btn3">Button3</button></a>
+				<a href="<?php echo $link; ?>pages/register.php"><img src="<?php  echo $link; ?>media/images/menu_index/btn_game_mode.png" alt="Italian Trulli" id="btn2"></a>
 
-				<a class="esUnA" href="<?php echo $link; ?>pages/creditos.php"><button id="btn4">Button4</button></a>
+				<a href="<?php echo $link; ?>pages/scoreboards.php"><img src="<?php  echo $link; ?>media/images/menu_index/btn_score.png" alt="Italian Trulli" id="btn3"></a>
 
+
+				<a href="<?php echo $link; ?>pages/login.php"><img src="<?php  echo $link; ?>media/images/menu_index/btn_tutorial.png" alt="Italian Trulli" id="btn4"></a>
+
+				<a href="<?php echo $link; ?>pages/creditos.php"><img src="<?php  echo $link; ?>media/images/menu_index/btn_credits.png" alt="Italian Trulli" id="btn5"></a>
 			</div>
 
-		<a href="<?php echo $link; ?>pages/settings.php"><img class="ui" src="<?php echo $link; ?>media/images/GAME UI-09.png" alt="Italian Trulli"></a>
+			<a href="<?php echo $link; ?>pages/settings.php"><img class="ui" src="<?php echo $link; ?>media/images/settings/GAME UI-09.png" alt="Italian Trulli"></a>
 
-		<img class="ui" src="<?php echo $link; ?>media/images/GAME UI-16.png" alt="Italian Trulli">
-
+		<img class="ui" src="<?php echo $link; ?>media/images/settings/GAME UI-16.png" alt="Italian Trulli">
 
 	</body>
 

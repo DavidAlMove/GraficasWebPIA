@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.containerS {
+   height: 80%;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Make the image responsive */
+.containerS img {
+ max-height: 80%;
+	max-width: 80%;
+	 display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 7%;
+	
+}
+
+#map {
+ 
+  
+
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 300px;
+  
+  min-width: 20%;
+
+	max-width: 20%;
+}
+
+.containerS .personajeSkinSelect{
+
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  min-width: 5%;
+
+	max-width: 5%;
+  
+}
+
+
+.containerS #btnAtras {
+  position: absolute;
+  top: 48%;
+  left: 34%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  width: 80px;
+
+  min-width: 5%;
+
+	max-width: 5%;
+} 
+
+
+
+.containerS #btnAceptar {
+  position: absolute;
+  top: 65%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: transparent;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  min-width: 5%;
+
+	max-width: 5%;
+} 
+
+.containerS #btnAdelante {
+  position: absolute;
+  top: 48%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  min-width: 5%;
+
+	max-width: 5%;
+} 
+
+.containerS #btnAtras:hover, #btnAdelante:hover, #btnAceptar:hover{
+  min-width: 6%;
+}
+
+.ui:hover{
+  max-height: 16%;
+    max-width: 16%;
+    cursor: pointer;
+}
